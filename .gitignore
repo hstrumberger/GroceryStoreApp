@@ -1,0 +1,19 @@
+# .NET
+bin/
+obj/
+*.user
+*.db
+*.db-shm
+*.db-wal
+appsettings.json
+appsettings.*.json
+
+# Node
+grocerystore-client/node_modules/
+grocerystore-client/dist/
+
+# Rider
+.idea/
+
+# VS Code
+.vscode/
