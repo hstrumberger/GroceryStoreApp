@@ -47,7 +47,7 @@ export const LoginPage = () => {
         </div>
         {mutation.isError && (
           <p style={{ color: '#e53e3e', textAlign: 'center', margin: 0 }}>
-            {(mutation.error as any)?.response?.data?.message ?? 'Login failed.'}
+            {(mutation.error as import('axios').AxiosError<{ message?: string }>)?.response?.data?.message ?? 'Login failed.'}
           </p>
         )}
         <button

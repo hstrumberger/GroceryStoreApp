@@ -120,7 +120,7 @@ export const CheckoutPage = () => {
 
           {mutation.isError && (
             <p style={{ color: '#e53e3e', marginTop: 12 }}>
-              {(mutation.error as any)?.response?.data?.message ?? 'Checkout failed.'}
+              {(mutation.error as import('axios').AxiosError<{ message?: string }>)?.response?.data?.message ?? 'Checkout failed.'}
             </p>
           )}
 
